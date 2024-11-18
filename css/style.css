@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+ line-height: 1.4; 
+ background-color: rgb(64, 50, 74);   
+}
+
+.nav-bar{
+    background-color: black;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-link{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+ul a:hover{
+    color: azure;
+   
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 169, 30);
+    transition: 0.5s;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15rem;
+    background-color: rgb(64, 50, 74);
+}
+
+.wrap{
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+h2{
+    color: rgb(255, 169, 30);
+}
+
+.hero-text{
+    font-size: 1.3em;
+    color: white;
+}
+
+h1, .project{
+    color: white;
+}
+
+
+.hero-button{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+button{
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 169, 30);
+    color: azure;
+    font-weight: bold;
+}
+.project{
+    margin-top: 0.6rem;
+}
+
+.border-line{
+    border: 3px solid  rgb(255, 169, 30);;
+}
+
+.display-image{
+    margin-top: -2rem;
+    transform: rotate(60deg);
+    border-radius: 300px;
+    margin-right: 3rem;
+}
+
+.second-div{
+    background-color: black;
+}
+
+.skill-div{
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    padding: 20px;
+}
+
+
+.skill-level{
+    display:flex ;
+    gap: 4rem;
+    align-items: center;
+    margin-left:2rem ;
+}
+
+.skill-line{
+    border: 3px solid rgb(242, 168, 58);
+    width: 550px;
+    align-items: center;
+}
+
+.per-skill{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.skill-rate{
+    padding: 0.5rem;
+}
+
+.percentage{
+    font-weight: bold;
+    color: white;
+}
+
+.footer-wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero-text-{
+    font-size: 1.7em;
+    color: white;
+}
+
+
+@media(max-width: 600px){
+   .nav-link{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    flex-direction: column;
+
+   } 
+
+   .nav-link a{
+    margin: -0.3rem;
+
+   }
+
+   .wrapper, .skill-level{
+   flex-direction: column;
+   
+   }
+}
+
+
